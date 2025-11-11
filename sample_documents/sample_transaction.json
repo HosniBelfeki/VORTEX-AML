@@ -1,0 +1,18 @@
+{
+  "transaction_id": "TXN-789012",
+  "transaction_date": "2024-10-15",
+  "originator_name": "Sample Originator",
+  "originator_account": "ACC-9876543",
+  "beneficiary_name": "Sample Beneficiary LLC",
+  "beneficiary_account": "ACC-1234567",
+  "amount": 50000.0,
+  "currency": "USD",
+  "purpose": "Business services",
+  "confidence_scores": {
+    "transaction_id": 0.98,
+    "originator_name": 0.96,
+    "beneficiary_name": 0.94,
+    "amount": 0.99,
+    "purpose": 0.87
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "report_id": "SAR-2024-001234",
+  "filing_date": "2024-11-01",
+  "filing_institution": "First National Bank",
+  "subject_name": "Sample Entity Name",
+  "subject_account": "ACC-9876543",
+  "transaction_amount": 150000,
+  "transaction_date": "2024-10-15",
+  "suspicious_activity_type": "Structuring - Below Reporting Threshold",
+  "narrative": "Customer made 5 structured deposits of $9,900 each within 3-day period to avoid $10K reporting threshold. Customer provided inconsistent explanations for deposits.",
+  "confidence_scores": {
+    "report_id": 0.99,
+    "filing_date": 0.98,
+    "subject_name": 0.95,
+    "transaction_amount": 0.97,
+    "narrative": 0.92
+  }
+}

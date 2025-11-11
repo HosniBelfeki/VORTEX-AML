@@ -1,0 +1,126 @@
+.analyses-list {
+  animation: fadeIn 0.3s ease;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.filters-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-select {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background: var(--bg-primary);
+}
+
+.analyses-table-card {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.analyses-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.analyses-table th {
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border-bottom: 2px solid var(--border);
+}
+
+.analyses-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.analyses-table tr:last-child td {
+  border-bottom: none;
+}
+
+.analyses-table tr:hover {
+  background: var(--bg-secondary);
+}
+
+.analysis-id {
+  font-family: monospace;
+  font-size: 0.875rem;
+  background: var(--bg-secondary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.entity-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.entity-type {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+}
+
+.btn-view {
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-view:hover {
+  background: var(--primary-dark);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .filters-bar {
+    flex-direction: column;
+  }
+
+  .analyses-table {
+    font-size: 0.875rem;
+  }
+
+  .analyses-table th,
+  .analyses-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}

@@ -1,0 +1,250 @@
+.document-upload {
+  animation: fadeIn 0.3s ease;
+}
+
+.upload-form-card {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.file-drop-zone {
+  border: 3px dashed var(--border);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: all 0.3s;
+  margin-bottom: 1.5rem;
+  background: var(--bg-secondary);
+}
+
+.file-drop-zone.active {
+  border-color: var(--primary);
+  background: #dbeafe;
+}
+
+.file-drop-zone.has-file {
+  border-style: solid;
+  border-color: var(--success);
+  background: #ecfdf5;
+}
+
+.file-drop-zone svg {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.drop-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.drop-subtext {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.btn-secondary {
+  background: var(--bg-primary);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.supported-formats {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.file-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.file-preview svg {
+  color: var(--success);
+}
+
+.file-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.file-size {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.btn-remove {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #fee2e2;
+  color: #991b1b;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-remove:hover {
+  background: #fecaca;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Extracted Data */
+.extracted-data-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+.extracted-data-section h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.data-item {
+  background: var(--bg-primary);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--primary);
+}
+
+.data-item label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.data-item p {
+  font-size: 1rem;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+/* Risk Assessment */
+.risk-assessment-section {
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+.risk-assessment-section h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.risk-summary {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.risk-score-display {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  border: 3px solid;
+}
+
+.score-value {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.score-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.risk-details {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.risk-metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+.risk-metric span {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.risk-metric strong {
+  font-size: 1.125rem;
+  color: var(--text-primary);
+}
+
+.flags-list,
+.recommendations-list {
+  margin-top: 1.5rem;
+}
+
+.flags-list h5,
+.recommendations-list h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .risk-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-details {
+    grid-template-columns: 1fr;
+  }
+
+  .data-grid {
+    grid-template-columns: 1fr;
+  }
+}

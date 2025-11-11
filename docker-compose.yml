@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  aml-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=True
+      - LOG_LEVEL=INFO
+      - AWS_REGION=us-east-1
+    volumes:
+      - ./temp_uploads:/app/temp_uploads
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Add PostgreSQL for production
+  # postgres:
+  #   image: postgres:15
+  #   environment:
+  #     - POSTGRES_USER=aml_user
+  #     - POSTGRES_PASSWORD=aml_password
+  #     - POSTGRES_DB=aml_db
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+  #   restart: unless-stopped
+
+# volumes:
+#   postgres_data:
