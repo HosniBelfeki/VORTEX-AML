@@ -26,26 +26,22 @@ An **enterprise-grade, real-time Anti-Money Laundering (AML) intelligence platfo
 
 **Developed by [Hosni Belfeki](https://www.linkedin.com/in/hosnibelfeki/)**
 
-[🚀 Quick Start](#-installation--setup) • [📖 Documentation](#-usage-guide) • [🎬 Demo](#-testing--demo) • [💼 Contact](#-support--contact)
+[🚀 Quick Start](#-installation--setup) • [📖 Documentation](#-usage-guide) • [🧪 Testing](#-testing--demo) • [💼 Contact](#-support--contact)
 
 </div>
 
 ---
 
-## � Platftorm Screenshots
+## 📸 Platform Screenshots
 
 ### Dashboard Overview
-![Dashboard](screenshots/1.png)
-*Real-time AML intelligence dashboard with risk distribution and analytics*
-
-### Manual Entity Screening
-![Manual Screening](screenshots/2.png)
-*Instant entity screening with multi-layer risk assessment*
+![Dashboard](screenshots/Dashboard.png)
+*Real-time AML intelligence dashboard with comprehensive risk analytics and monitoring*
 
 ### Document Upload & Analysis
+![Document Upload](screenshots/2.png)
 ![Document Upload](screenshots/3.png)
 *AI-powered document extraction using LandingAI ADE and AWS Bedrock*
-
 
 ### Bulk CSV Analysis
 ![Bulk Analysis](screenshots/4.png)
@@ -58,10 +54,6 @@ An **enterprise-grade, real-time Anti-Money Laundering (AML) intelligence platfo
 ### Case Management
 ![Case Management](screenshots/6.png)
 *Professional compliance case management and workflow*
-
-### Reports & Compliance
-![Reports](screenshots/7.png)
-*Generate regulatory reports and SAR filings automatically*
 
 ---
 
@@ -752,13 +744,12 @@ vortex-aml/
 │   ├── sample_transactions.csv
 │   └── transactions_2025.csv
 ├── screenshots/               # Platform screenshots
-│   ├── 1.png                  # Dashboard
+│   ├── Dashboard.png                  # Dashboard
 │   ├── 2.png                  # Manual screening
 │   ├── 3.png                  # Document upload
 │   ├── 4.png                  # Bulk analysis
 │   ├── 5.png                  # Analysis details
 │   ├── 6.png                  # Case management
-│   └── 7.png                  # Reports
 ├── deploy/
 │   └── setup_aws.sh           # AWS deployment script
 ├── requirements.txt           # Python dependencies
@@ -869,7 +860,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Enterprise-grade AML intelligence platform ready for immediate deployment**
 
 ### Quick Navigation
-[🚀 Get Started](#-installation--setup) • [📖 Documentation](#-usage-guide) • [🎬 Demo](#-testing--demo) • [💼 Contact](#-support--contact)
+[🚀 Get Started](#-installation--setup) • [📖 Documentation](#-usage-guide) • [🧪 Testing](#-testing--demo) • [💼 Contact](#-support--contact)
 
 ---
 
